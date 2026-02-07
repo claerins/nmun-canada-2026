@@ -79,13 +79,26 @@
       padding: 16px;
     }
     .section-head{
-      display:flex; flex-wrap:wrap; justify-content:space-between; align-items:baseline;
-      gap: 10px;
+      display:flex;
+      justify-content:space-between;
+      align-items:flex-start;
+      gap: 14px;
       padding-bottom: 10px;
       border-bottom: 1px solid rgba(255,255,255,.10);
       margin-bottom: 12px;
     }
     h2{ margin:0; font-size: 18px; }
+    .section-left{
+      display:flex;
+      flex-direction:column;
+      gap: 10px;
+      min-width: 0;
+      flex: 1 1 auto;
+    }
+    .paper{
+      margin-left: auto;
+      flex: 0 0 auto;
+    }
     .paper a{ color: #ffffff; }
     .paper small{ display:block; color: var(--muted2); margin-top: 3px; }
     .committee-meta{
@@ -93,7 +106,7 @@
       flex-wrap:wrap;
       gap:10px;
       align-items:center;
-      margin-top: 10px;
+      margin-top: 0;
       color: var(--muted);
       font-size: 13px;
     }
@@ -112,7 +125,13 @@
       grid-template-columns: repeat(2, minmax(0,1fr));
       gap: 12px;
     }
-    @media (max-width: 820px){ .cards{ grid-template-columns: 1fr; } h1{ font-size: 28px; } .hero-img{ height: 220px; } }
+    @media (max-width: 820px){
+      .cards{ grid-template-columns: 1fr; }
+      h1{ font-size: 28px; }
+      .hero-img{ height: 220px; }
+      .section-head{ flex-direction: column; }
+      .paper{ margin-left: 0; }
+    }
     .card{
       display:flex; gap: 12px;
       padding: 12px;
@@ -161,7 +180,6 @@
         </p>
 
         <div class="actions">
-          <a class="btn" href="./README.md">Repository overview</a>
           <a class="btn" href="mailto:nmun.ny.goetheuni@gmail.com">Delegation email</a>
           <a class="btn" href="https://www.instagram.com/nmun_goethe" target="_blank" rel="noreferrer">Instagram</a>
           <a class="btn" href="https://x.com/goethegoesnmun" target="_blank" rel="noreferrer">X (Twitter)</a>
@@ -179,13 +197,15 @@
       <!-- CND -->
       <section class="section" id="cnd">
         <div class="section-head">
-          <h2>Commission on Narcotic Drugs (CND)</h2>
+          <div class="section-left">
+            <h2>Commission on Narcotic Drugs (CND)</h2>
+            <div class="committee-meta">
+              <span class="tag">Committee email:</span>
+              <a class="tag" href="mailto:cnd-canada-nmun2026@gmail.com">cnd-canada-nmun2026@gmail.com</a>
+            </div>
+          </div>
           <div class="paper">
             <a class="btn" href="./position-papers/cnd/position-paper.pdf">Position Paper (PDF)</a>
-          </div>
-          <div class="committee-meta">
-            <span class="tag">Committee email:</span>
-            <a class="tag" href="mailto:cnd-canada-nmun2026@gmail.com">cnd-canada-nmun2026@gmail.com</a>
           </div>
         </div>
 
@@ -217,13 +237,15 @@
       <!-- GA1 -->
       <section class="section" id="ga1">
         <div class="section-head">
-          <h2>General Assembly First Committee (GA1)</h2>
+          <div class="section-left">
+            <h2>General Assembly First Committee (GA1)</h2>
+            <div class="committee-meta">
+              <span class="tag">Committee email:</span>
+              <a class="tag" href="mailto:ga1-canada-nmun2026@gmail.com">ga1-canada-nmun2026@gmail.com</a>
+            </div>
+          </div>
           <div class="paper">
             <a class="btn" href="./position-papers/ga1/position-paper.pdf">Position Paper (PDF)</a>
-          </div>
-          <div class="committee-meta">
-            <span class="tag">Committee email:</span>
-            <a class="tag" href="mailto:ga1-canada-nmun2026@gmail.com">ga1-canada-nmun2026@gmail.com</a>
           </div>
         </div>
         <div class="cards">
@@ -249,13 +271,15 @@
       <!-- ECLAC -->
       <section class="section" id="eclac">
         <div class="section-head">
-          <h2>Economic Commission for Latin America and the Caribbean (ECLAC)</h2>
+          <div class="section-left">
+            <h2>Economic Commission for Latin America and the Caribbean (ECLAC)</h2>
+            <div class="committee-meta">
+              <span class="tag">Committee email:</span>
+              <a class="tag" href="mailto:eclac-canada-nmun2026@gmail.com">eclac-canada-nmun2026@gmail.com</a>
+            </div>
+          </div>
           <div class="paper">
             <a class="btn" href="./position-papers/eclac/position-paper.pdf">Position Paper (PDF)</a>
-          </div>
-          <div class="committee-meta">
-            <span class="tag">Committee email:</span>
-            <a class="tag" href="mailto:eclac-canada-nmun2026@gmail.com">eclac-canada-nmun2026@gmail.com</a>
           </div>
         </div>
         <div class="cards">
@@ -281,13 +305,15 @@
       <!-- ECOSOC -->
       <section class="section" id="ecosoc">
         <div class="section-head">
-          <h2>UN Economic and Social Council (ECOSOC)</h2>
+          <div class="section-left">
+            <h2>UN Economic and Social Council (ECOSOC)</h2>
+            <div class="committee-meta">
+              <span class="tag">Committee email:</span>
+              <a class="tag" href="mailto:ecosoc-canada-nmun2026@gmail.com">ecosoc-canada-nmun2026@gmail.com</a>
+            </div>
+          </div>
           <div class="paper">
             <a class="btn" href="./position-papers/ecosoc/position-paper.pdf">Position Paper (PDF)</a>
-          </div>
-          <div class="committee-meta">
-            <span class="tag">Committee email:</span>
-            <a class="tag" href="mailto:ecosoc-canada-nmun2026@gmail.com">ecosoc-canada-nmun2026@gmail.com</a>
           </div>
         </div>
         <div class="cards">
@@ -313,13 +339,15 @@
       <!-- UNEA -->
       <section class="section" id="unea">
         <div class="section-head">
-          <h2>United Nations Environment Assembly (UNEA)</h2>
+          <div class="section-left">
+            <h2>United Nations Environment Assembly (UNEA)</h2>
+            <div class="committee-meta">
+              <span class="tag">Committee email:</span>
+              <a class="tag" href="mailto:unea-canada-nmun2026@gmail.com">unea-canada-nmun2026@gmail.com</a>
+            </div>
+          </div>
           <div class="paper">
             <a class="btn" href="./position-papers/unea/position-paper.pdf">Position Paper (PDF)</a>
-          </div>
-          <div class="committee-meta">
-            <span class="tag">Committee email:</span>
-            <a class="tag" href="mailto:unea-canada-nmun2026@gmail.com">unea-canada-nmun2026@gmail.com</a>
           </div>
         </div>
         <div class="cards">
@@ -345,13 +373,15 @@
       <!-- PBC -->
       <section class="section" id="pbc">
         <div class="section-head">
-          <h2>Peacebuilding Commission (PBC)</h2>
+          <div class="section-left">
+            <h2>Peacebuilding Commission (PBC)</h2>
+            <div class="committee-meta">
+              <span class="tag">Committee email:</span>
+              <a class="tag" href="mailto:pbc-canada-nmun2026@gmail.com">pbc-canada-nmun2026@gmail.com</a>
+            </div>
+          </div>
           <div class="paper">
             <a class="btn" href="./position-papers/pbc/position-paper.pdf">Position Paper (PDF)</a>
-          </div>
-          <div class="committee-meta">
-            <span class="tag">Committee email:</span>
-            <a class="tag" href="mailto:pbc-canada-nmun2026@gmail.com">pbc-canada-nmun2026@gmail.com</a>
           </div>
         </div>
         <div class="cards">
@@ -377,13 +407,15 @@
       <!-- GA2 -->
       <section class="section" id="ga2">
         <div class="section-head">
-          <h2>General Assembly Second Committee (GA2)</h2>
+          <div class="section-left">
+            <h2>General Assembly Second Committee (GA2)</h2>
+            <div class="committee-meta">
+              <span class="tag">Committee email:</span>
+              <a class="tag" href="mailto:ga2-canada-nmun2026@gmail.com">ga2-canada-nmun2026@gmail.com</a>
+            </div>
+          </div>
           <div class="paper">
             <a class="btn" href="./position-papers/ga2/position-paper.pdf">Position Paper (PDF)</a>
-          </div>
-          <div class="committee-meta">
-            <span class="tag">Committee email:</span>
-            <a class="tag" href="mailto:ga2-canada-nmun2026@gmail.com">ga2-canada-nmun2026@gmail.com</a>
           </div>
         </div>
         <div class="cards">
@@ -409,13 +441,15 @@
       <!-- UNHCR -->
       <section class="section" id="unhcr">
         <div class="section-head">
-          <h2>UN Refugee Agency (UNHCR)</h2>
+          <div class="section-left">
+            <h2>UN Refugee Agency (UNHCR)</h2>
+            <div class="committee-meta">
+              <span class="tag">Committee email:</span>
+              <a class="tag" href="mailto:unhcr-canada-nmun2026@gmail.com">unhcr-canada-nmun2026@gmail.com</a>
+            </div>
+          </div>
           <div class="paper">
             <a class="btn" href="./position-papers/unhcr/position-paper.pdf">Position Paper (PDF)</a>
-          </div>
-          <div class="committee-meta">
-            <span class="tag">Committee email:</span>
-            <a class="tag" href="mailto:unhcr-canada-nmun2026@gmail.com">unhcr-canada-nmun2026@gmail.com</a>
           </div>
         </div>
         <div class="cards">
@@ -441,13 +475,15 @@
       <!-- GA3 -->
       <section class="section" id="ga3">
         <div class="section-head">
-          <h2>General Assembly Third Committee (GA3)</h2>
+          <div class="section-left">
+            <h2>General Assembly Third Committee (GA3)</h2>
+            <div class="committee-meta">
+              <span class="tag">Committee email:</span>
+              <a class="tag" href="mailto:ga3-canada-nmun2026@gmail.com">ga3-canada-nmun2026@gmail.com</a>
+            </div>
+          </div>
           <div class="paper">
             <a class="btn" href="./position-papers/ga3/position-paper.pdf">Position Paper (PDF)</a>
-          </div>
-          <div class="committee-meta">
-            <span class="tag">Committee email:</span>
-            <a class="tag" href="mailto:ga3-canada-nmun2026@gmail.com">ga3-canada-nmun2026@gmail.com</a>
           </div>
         </div>
         <div class="cards">
@@ -473,13 +509,15 @@
       <!-- NPT -->
       <section class="section" id="npt">
         <div class="section-head">
-          <h2>Non-Proliferation Treaty Review Conference (NPT)</h2>
+          <div class="section-left">
+            <h2>Non-Proliferation Treaty Review Conference (NPT)</h2>
+            <div class="committee-meta">
+              <span class="tag">Committee email:</span>
+              <a class="tag" href="mailto:npt-canada-nmun2026@gmail.com">npt-canada-nmun2026@gmail.com</a>
+            </div>
+          </div>
           <div class="paper">
             <a class="btn" href="./position-papers/npt/position-paper.pdf">Position Paper (PDF)</a>
-          </div>
-          <div class="committee-meta">
-            <span class="tag">Committee email:</span>
-            <a class="tag" href="mailto:npt-canada-nmun2026@gmail.com">npt-canada-nmun2026@gmail.com</a>
           </div>
         </div>
         <div class="cards">
