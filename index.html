@@ -53,7 +53,7 @@
       position:absolute; inset:0;
       background: linear-gradient(to top, rgba(11,18,32,.90), rgba(11,18,32,.25));
     }
-    .hero-content{ padding: 18px 18px 22px; }
+    .hero-content{ padding: 18px 18px 10px; }
     h1{ margin: 0 0 6px; font-size: 34px; letter-spacing:.2px; }
     .sub{ margin: 0; color: var(--muted); max-width: 85ch; }
     .actions{ display:flex; flex-wrap:wrap; gap:10px; margin-top: 14px; }
@@ -64,6 +64,18 @@
       border: 1px solid var(--border);
       background: rgba(255,255,255,.10);
       text-decoration:none;
+      cursor: pointer;
+      transition: background 160ms ease, transform 160ms ease, border-color 160ms ease;
+    }
+    .btn:hover{
+      background: rgba(255,255,255,.18);
+      transform: translateY(-1px);
+      border-color: rgba(255,255,255,.22);
+      text-decoration: none;
+    }
+    .btn:focus-visible{
+      outline: 2px solid rgba(255,255,255,.35);
+      outline-offset: 2px;
     }
     .grid{
       display:grid;
@@ -118,6 +130,19 @@
     }
     .committee-meta a{ text-decoration: none; }
     .committee-meta a:hover{ text-decoration: underline; }
+    .committee-meta a.tag{
+      cursor: pointer;
+      transition: background 160ms ease, transform 160ms ease, border-color 160ms ease;
+    }
+    .committee-meta a.tag:hover{
+      background: rgba(255,255,255,.16);
+      transform: translateY(-1px);
+      border-color: rgba(255,255,255,.22);
+    }
+    .committee-meta a.tag:focus-visible{
+      outline: 2px solid rgba(255,255,255,.35);
+      outline-offset: 2px;
+    }
     .tag{
       display:inline-flex;
       align-items:center;
@@ -159,6 +184,19 @@
     .studies{ margin: 4px 0 0; color: var(--muted2); font-size: 13px; }
     .role{ margin: 2px 0 8px; color: var(--muted2); font-size: 13px; }
     .links{ display:flex; flex-wrap:wrap; gap: 10px; font-size: 13px; color: var(--muted); }
+    .links a{
+      padding: 2px 6px;
+      border-radius: 8px;
+      transition: background 160ms ease;
+    }
+    .links a:hover{
+      background: rgba(255,255,255,.10);
+      text-decoration: none;
+    }
+    .links a:focus-visible{
+      outline: 2px solid rgba(255,255,255,.35);
+      outline-offset: 2px;
+    }
     .footer{
       margin-top: 18px;
       color: var(--muted2);
@@ -166,7 +204,7 @@
       border-top: 1px solid rgba(255,255,255,.10);
       padding-top: 14px;
     }
-    .note{ color: var(--muted2); font-size: 12px; margin-top: 8px; }
+    .note{ color: var(--muted2); font-size: 12px; margin-top: 6px; }
 
     /* Committee jump pills */
     .committee-jump{
@@ -256,7 +294,7 @@
             </div>
           </div>
           <div class="paper">
-            <a class="btn" href="./position-papers/ga1/position-paper.pdf">Position Paper (PDF)</a>
+            <a class="btn" href="./position-papers/ga1/position-paper.pdf" target="_blank" rel="noreferrer">Position Paper (PDF)</a>
           </div>
         </div>
         <div class="cards">
@@ -300,7 +338,7 @@
             </div>
           </div>
           <div class="paper">
-            <a class="btn" href="./position-papers/ga2/position-paper.pdf">Position Paper (PDF)</a>
+            <a class="btn" href="./position-papers/ga2/position-paper.pdf" target="_blank" rel="noreferrer">Position Paper (PDF)</a>
           </div>
         </div>
         <div class="cards">
@@ -344,7 +382,7 @@
             </div>
           </div>
           <div class="paper">
-            <a class="btn" href="./position-papers/ga3/position-paper.pdf">Position Paper (PDF)</a>
+            <a class="btn" href="./position-papers/ga3/position-paper.pdf" target="_blank" rel="noreferrer">Position Paper (PDF)</a>
           </div>
         </div>
         <div class="cards">
@@ -390,7 +428,7 @@
             </div>
           </div>
           <div class="paper">
-            <a class="btn" href="./position-papers/cnd/position-paper.pdf">Position Paper (PDF)</a>
+            <a class="btn" href="./position-papers/cnd/position-paper.pdf" target="_blank" rel="noreferrer">Position Paper (PDF)</a>
           </div>
         </div>
 
@@ -436,7 +474,7 @@
             </div>
           </div>
           <div class="paper">
-            <a class="btn" href="./position-papers/ecosoc/position-paper.pdf">Position Paper (PDF)</a>
+            <a class="btn" href="./position-papers/ecosoc/position-paper.pdf" target="_blank" rel="noreferrer">Position Paper (PDF)</a>
           </div>
         </div>
         <div class="cards">
@@ -480,7 +518,7 @@
             </div>
           </div>
           <div class="paper">
-            <a class="btn" href="./position-papers/eclac/position-paper.pdf">Position Paper (PDF)</a>
+            <a class="btn" href="./position-papers/eclac/position-paper.pdf" target="_blank" rel="noreferrer">Position Paper (PDF)</a>
           </div>
         </div>
         <div class="cards">
@@ -524,7 +562,7 @@
             </div>
           </div>
           <div class="paper">
-            <a class="btn" href="./position-papers/unea/position-paper.pdf">Position Paper (PDF)</a>
+            <a class="btn" href="./position-papers/unea/position-paper.pdf" target="_blank" rel="noreferrer">Position Paper (PDF)</a>
           </div>
         </div>
         <div class="cards">
@@ -568,7 +606,7 @@
             </div>
           </div>
           <div class="paper">
-            <a class="btn" href="./position-papers/pbc/position-paper.pdf">Position Paper (PDF)</a>
+            <a class="btn" href="./position-papers/pbc/position-paper.pdf" target="_blank" rel="noreferrer">Position Paper (PDF)</a>
           </div>
         </div>
         <div class="cards">
@@ -612,7 +650,7 @@
             </div>
           </div>
           <div class="paper">
-            <a class="btn" href="./position-papers/unhcr/position-paper.pdf">Position Paper (PDF)</a>
+            <a class="btn" href="./position-papers/unhcr/position-paper.pdf" target="_blank" rel="noreferrer">Position Paper (PDF)</a>
           </div>
         </div>
         <div class="cards">
@@ -656,7 +694,7 @@
             </div>
           </div>
           <div class="paper">
-            <a class="btn" href="./position-papers/npt/position-paper.pdf">Position Paper (PDF)</a>
+            <a class="btn" href="./position-papers/npt/position-paper.pdf" target="_blank" rel="noreferrer">Position Paper (PDF)</a>
           </div>
         </div>
         <div class="cards">
