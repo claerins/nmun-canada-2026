@@ -167,6 +167,28 @@
       padding-top: 14px;
     }
     .note{ color: var(--muted2); font-size: 12px; margin-top: 8px; }
+
+    /* Committee jump pills */
+    .committee-jump{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 14px;
+    }
+    .pill{
+      display: inline-flex;
+      align-items: center;
+      padding: 8px 14px;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      background: rgba(255,255,255,.08);
+      font-size: 13px;
+      color: #eaf0ff;
+      text-decoration: none;
+    }
+    .pill:hover{
+      background: rgba(255,255,255,.16);
+    }
   </style>
 </head>
 
@@ -185,6 +207,18 @@
           Central landing page for Canada’s delegation at National Model United Nations (NMUN) 2026.
           Find the committees, delegates, and the latest position papers below.
         </p>
+        <div class="committee-jump">
+          <a href="../#ga1" class="pill">GA1</a>
+          <a href="../#ga2" class="pill">GA2</a>
+          <a href="../#ga3" class="pill">GA3</a>
+          <a href="../#cnd" class="pill">CND</a>
+          <a href="../#ecosoc" class="pill">ECOSOC</a>
+          <a href="../#eclac" class="pill">ECLAC</a>
+          <a href="../#unea" class="pill">UNEA</a>
+          <a href="../#pbc" class="pill">PBC</a>
+          <a href="../#unhcr" class="pill">UNHCR</a>
+          <a href="../#npt" class="pill">NPT</a>
+        </div>
 
         <div class="actions">
           <a class="btn" href="mailto:nmun.ny.goetheuni@gmail.com">Delegation email</a>
