@@ -51,6 +51,24 @@
       background: rgba(255,255,255,.10);
       text-decoration:none;
       white-space: nowrap;
+      cursor: pointer;
+      transition: background 160ms ease, transform 160ms ease, border-color 160ms ease;
+    }
+    .btn:hover{
+      background: rgba(255,255,255,.18);
+      transform: translateY(-1px);
+      border-color: rgba(255,255,255,.22);
+      text-decoration: none;
+    }
+    .btn:focus-visible{
+      outline: 2px solid rgba(255,255,255,.35);
+      outline-offset: 2px;
+    }
+    .badge a{
+      text-decoration: none;
+    }
+    .badge a:hover{
+      text-decoration: none;
     }
 
     .list{ margin-top: 14px; display:flex; flex-direction:column; gap: 12px; }
@@ -101,7 +119,7 @@
 <body>
   <div class="wrap">
     <div class="topbar">
-      <div class="badge">Canada — NMUN 2026</div>
+      <div class="badge"><a href="../">Canada — NMUN 2026</a></div>
       <div class="badge"><a href="../">Back to delegation page</a></div>
     </div>
 
@@ -125,15 +143,15 @@
             <p class="title">General Assembly First Committee (GA1)</p>
           </div>
           <div class="sum-right">
-            <a class="btn" href="./ga1/position-paper.pdf">Open PDF</a>
+            <a class="btn" href="./ga1/position-paper.pdf" target="_blank" rel="noreferrer">Open PDF</a>
             <a class="btn" href="../#ga1">Go to committee</a>
           </div>
         </summary>
         <div class="inner">
-          <p>Committee focus: TBA.</p>
-          <p>Delegates: TBA.</p>
-          <p>For more context and contacts, see the committee section on the delegation page.</p>
-        </div>
+  <p>The First Committee focuses on disarmament and international security. It debates risks to peace and stability, including weapons issues and broader security challenges, and develops recommendations that are later negotiated in resolutions.</p>
+  <p>Delegates: TBA.</p>
+  <p>For committee context, contacts, and delegate profiles, see the GA1 section on the delegation page.</p>
+</div>
       </details>
 
       <details>
@@ -142,15 +160,15 @@
             <p class="title">General Assembly Second Committee (GA2)</p>
           </div>
           <div class="sum-right">
-            <a class="btn" href="./ga2/position-paper.pdf">Open PDF</a>
+            <a class="btn" href="./ga2/position-paper.pdf" target="_blank" rel="noreferrer">Open PDF</a>
             <a class="btn" href="../#ga2">Go to committee</a>
           </div>
         </summary>
         <div class="inner">
-          <p>Committee focus: TBA.</p>
-          <p>Delegates: TBA.</p>
-          <p>For more context and contacts, see the committee section on the delegation page.</p>
-        </div>
+  <p>The Second Committee covers economic and financial questions. It addresses development-related policy priorities, international economic cooperation, and the financial and structural conditions that shape inclusive and sustainable growth.</p>
+  <p>Delegates: TBA.</p>
+  <p>For committee context, contacts, and delegate profiles, see the GA2 section on the delegation page.</p>
+</div>
       </details>
 
       <details>
@@ -159,15 +177,15 @@
             <p class="title">General Assembly Third Committee (GA3)</p>
           </div>
           <div class="sum-right">
-            <a class="btn" href="./ga3/position-paper.pdf">Open PDF</a>
+            <a class="btn" href="./ga3/position-paper.pdf" target="_blank" rel="noreferrer">Open PDF</a>
             <a class="btn" href="../#ga3">Go to committee</a>
           </div>
         </summary>
         <div class="inner">
-          <p>Committee focus: TBA.</p>
-          <p>Delegates: TBA.</p>
-          <p>For more context and contacts, see the committee section on the delegation page.</p>
-        </div>
+  <p>The Third Committee deals with social, humanitarian, and cultural issues, including human rights. It discusses global policy challenges that affect individuals and communities, and develops recommendations that feed into General Assembly outcomes.</p>
+  <p>Delegates: TBA.</p>
+  <p>For committee context, contacts, and delegate profiles, see the GA3 section on the delegation page.</p>
+</div>
       </details>
 
       <details>
@@ -176,15 +194,15 @@
             <p class="title">Commission on Narcotic Drugs (CND)</p>
           </div>
           <div class="sum-right">
-            <a class="btn" href="./cnd/position-paper.pdf">Open PDF</a>
+            <a class="btn" href="./cnd/position-paper.pdf" target="_blank" rel="noreferrer">Open PDF</a>
             <a class="btn" href="../#cnd">Go to committee</a>
           </div>
         </summary>
         <div class="inner">
-          <p>Committee focus: TBA.</p>
-          <p>Delegates: TBA.</p>
-          <p>For more context and contacts, see the committee section on the delegation page.</p>
-        </div>
+  <p>The Commission on Narcotic Drugs is the UN’s central policy-making body on drug-related matters within the UN system. It reviews global trends, sets policy direction, and considers measures to address the world drug situation through international cooperation.</p>
+  <p>Delegates: TBA.</p>
+  <p>For committee context, contacts, and delegate profiles, see the CND section on the delegation page.</p>
+</div>
       </details>
 
       <details>
@@ -193,15 +211,15 @@
             <p class="title">UN Economic and Social Council (ECOSOC)</p>
           </div>
           <div class="sum-right">
-            <a class="btn" href="./ecosoc/position-paper.pdf">Open PDF</a>
+            <a class="btn" href="./ecosoc/position-paper.pdf" target="_blank" rel="noreferrer">Open PDF</a>
             <a class="btn" href="../#ecosoc">Go to committee</a>
           </div>
         </summary>
         <div class="inner">
-          <p>Committee focus: TBA.</p>
-          <p>Delegates: TBA.</p>
-          <p>For more context and contacts, see the committee section on the delegation page.</p>
-        </div>
+  <p>ECOSOC coordinates UN work on economic, social, and related policy issues. It provides a platform for dialogue and policy guidance across development, humanitarian, and sustainability agendas and connects UN entities with member states and civil society.</p>
+  <p>Delegates: TBA.</p>
+  <p>For committee context, contacts, and delegate profiles, see the ECOSOC section on the delegation page.</p>
+</div>
       </details>
 
       <details>
@@ -210,15 +228,15 @@
             <p class="title">Economic Commission for Latin America and the Caribbean (ECLAC)</p>
           </div>
           <div class="sum-right">
-            <a class="btn" href="./eclac/position-paper.pdf">Open PDF</a>
+            <a class="btn" href="./eclac/position-paper.pdf" target="_blank" rel="noreferrer">Open PDF</a>
             <a class="btn" href="../#eclac">Go to committee</a>
           </div>
         </summary>
         <div class="inner">
-          <p>Committee focus: TBA.</p>
-          <p>Delegates: TBA.</p>
-          <p>For more context and contacts, see the committee section on the delegation page.</p>
-        </div>
+  <p>ECLAC is the UN’s regional commission for Latin America and the Caribbean. It supports evidence-based policy discussions on development challenges and regional cooperation, and it provides analytical work that informs decision-making and negotiation.</p>
+  <p>Delegates: TBA.</p>
+  <p>For committee context, contacts, and delegate profiles, see the ECLAC section on the delegation page.</p>
+</div>
       </details>
 
       <details>
@@ -227,15 +245,15 @@
             <p class="title">United Nations Environment Assembly (UNEA)</p>
           </div>
           <div class="sum-right">
-            <a class="btn" href="./unea/position-paper.pdf">Open PDF</a>
+            <a class="btn" href="./unea/position-paper.pdf" target="_blank" rel="noreferrer">Open PDF</a>
             <a class="btn" href="../#unea">Go to committee</a>
           </div>
         </summary>
         <div class="inner">
-          <p>Committee focus: TBA.</p>
-          <p>Delegates: TBA.</p>
-          <p>For more context and contacts, see the committee section on the delegation page.</p>
-        </div>
+  <p>UNEA is the UN’s highest-level forum on environmental matters. It sets broad priorities for global environmental cooperation, considers policy responses to emerging challenges, and shapes the direction of work under the UN Environment Programme.</p>
+  <p>Delegates: TBA.</p>
+  <p>For committee context, contacts, and delegate profiles, see the UNEA section on the delegation page.</p>
+</div>
       </details>
 
       <details>
@@ -244,15 +262,15 @@
             <p class="title">Peacebuilding Commission (PBC)</p>
           </div>
           <div class="sum-right">
-            <a class="btn" href="./pbc/position-paper.pdf">Open PDF</a>
+            <a class="btn" href="./pbc/position-paper.pdf" target="_blank" rel="noreferrer">Open PDF</a>
             <a class="btn" href="../#pbc">Go to committee</a>
           </div>
         </summary>
         <div class="inner">
-          <p>Committee focus: TBA.</p>
-          <p>Delegates: TBA.</p>
-          <p>For more context and contacts, see the committee section on the delegation page.</p>
-        </div>
+  <p>The Peacebuilding Commission supports international efforts to sustain peace in countries affected by conflict. It provides advice, helps improve coordination across actors, and promotes longer-term approaches that link political, security, and development considerations.</p>
+  <p>Delegates: TBA.</p>
+  <p>For committee context, contacts, and delegate profiles, see the PBC section on the delegation page.</p>
+</div>
       </details>
 
       <details>
@@ -261,15 +279,15 @@
             <p class="title">UN Refugee Agency (UNHCR)</p>
           </div>
           <div class="sum-right">
-            <a class="btn" href="./unhcr/position-paper.pdf">Open PDF</a>
+            <a class="btn" href="./unhcr/position-paper.pdf" target="_blank" rel="noreferrer">Open PDF</a>
             <a class="btn" href="../#unhcr">Go to committee</a>
           </div>
         </summary>
         <div class="inner">
-          <p>Committee focus: TBA.</p>
-          <p>Delegates: TBA.</p>
-          <p>For more context and contacts, see the committee section on the delegation page.</p>
-        </div>
+  <p>UNHCR is the UN agency mandated to protect refugees and other displaced people. It works with states and partners on protection standards, practical assistance, and durable solutions, while bringing humanitarian and legal perspectives into policy debates.</p>
+  <p>Delegates: TBA.</p>
+  <p>For committee context, contacts, and delegate profiles, see the UNHCR section on the delegation page.</p>
+</div>
       </details>
 
       <details>
@@ -278,15 +296,15 @@
             <p class="title">Non-Proliferation Treaty Review Conference (NPT)</p>
           </div>
           <div class="sum-right">
-            <a class="btn" href="./npt/position-paper.pdf">Open PDF</a>
+            <a class="btn" href="./npt/position-paper.pdf" target="_blank" rel="noreferrer">Open PDF</a>
             <a class="btn" href="../#npt">Go to committee</a>
           </div>
         </summary>
         <div class="inner">
-          <p>Committee focus: TBA.</p>
-          <p>Delegates: TBA.</p>
-          <p>For more context and contacts, see the committee section on the delegation page.</p>
-        </div>
+  <p>The NPT Review Conference process assesses the implementation of the Treaty on the Non-Proliferation of Nuclear Weapons. It provides a forum to review commitments, debate priorities across non-proliferation, disarmament, and peaceful uses of nuclear energy, and to identify areas for collective progress.</p>
+  <p>Delegates: TBA.</p>
+  <p>For committee context, contacts, and delegate profiles, see the NPT section on the delegation page.</p>
+</div>
       </details>
 
     </div>
